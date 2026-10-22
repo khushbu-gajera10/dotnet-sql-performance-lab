@@ -426,3 +426,43 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# DotNetSqlPerformanceLab local configuration and generated benchmark output
+.env
+.env.*
+!.env.example
+secrets.json
+user-secrets.json
+appsettings.Development.json
+appsettings.*.local.json
+*.local.json
+*.local.config
+*.local.yaml
+*.local.yml
+BenchmarkResults/
+benchmark-results/
+results/benchmarks/
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.p8
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+
+# Additional local IDE state and temporary files
+.idea/
+.fleet/
+*.temp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Curated, sanitized benchmark evidence is intentionally public
+!/docs/benchmark-results/
+!/docs/benchmark-results/**

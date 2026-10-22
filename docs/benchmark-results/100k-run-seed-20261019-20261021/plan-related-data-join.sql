@@ -1,0 +1,1 @@
+SELECT c."Id", o."Id", l."Id", p."Name" FROM customers c LEFT JOIN orders o ON c."Id"=o."CustomerId" LEFT JOIN order_lines l ON o."Id"=l."OrderId" LEFT JOIN products p ON l."ProductId"=p."Id" WHERE c."Id" IN (1,2,3,4,5,6,7,8) ORDER BY c."Id",o."OrderDate" DESC,o."Id" DESC,l."Id";

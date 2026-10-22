@@ -1,0 +1,8 @@
+Database target: 127.0.0.1:5433/dotnet_sql_performance_lab
+Credentials: not recorded
+Verification scope: benchmark run; benchmark mode did not seed or reset.
+Before benchmark: customers=20000; products=2000; orders=100000; order_lines=399830
+After benchmark and test suite: customers=20000; products=2000; orders=100000; order_lines=399830
+Candidate composite indexes before: 0
+Candidate composite indexes after: 0
+Verification: row counts unchanged; temporary candidate indexes removed.
